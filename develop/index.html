@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Figuras Geométricas & Fórmulas - Tailwind CSS</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-slate-100 font-sans text-slate-800 antialiased min-h-screen flex flex-col justify-between">
+
+  <!-- Header sticky com sombra e gradiente -->
+  <header class="sticky top-0 z-50 bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-5 shadow-lg">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-2xl font-extrabold tracking-tight">Geometria Interativa</h1>
+      <span class="bg-white/20 text-xs font-semibold uppercase px-3 py-1 rounded-full backdrop-blur-sm">
+        Tailwind CSS (10 Formas)
+      </span>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="py-12 px-6 text-center bg-white border-b border-slate-200">
+    <div class="max-w-3xl mx-auto flex flex-col items-center">
+      <h2 class="text-3xl sm:text-4xl font-extrabold text-slate-900 leading-tight mb-3">
+        Galeria de Figuras & Fórmulas Geométricas
+      </h2>
+      <p class="text-slate-600 text-base sm:text-lg">
+        Explore conceitos fundamentais da geometria plana com 10 formas estilizadas via Tailwind CSS e suas respectivas fórmulas matemáticas.
+      </p>
+    </div>
+  </section>
+
+  <!-- Grid Responsivo de Figuras -->
+  <main class="max-w-7xl mx-auto p-6 w-full">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+
+      <!-- 1. Quadrado -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-32 h-32 bg-indigo-500 rounded-md mb-4 shadow-inner flex items-center justify-center text-white font-bold">
+            Quadrado
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Quadrado</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Polígono regular de 4 lados iguais e 4 ângulos retos de 90°.
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Lado = l):</p>
+          <p><span class="font-medium text-indigo-600">Área:</span> A = l²</p>
+          <p><span class="font-medium text-indigo-600">Perímetro:</span> P = 4 · l</p>
+        </div>
+      </div>
+
+      <!-- 2. Círculo -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-32 h-32 bg-emerald-500 rounded-full mb-4 flex items-center justify-center text-white font-bold">
+            Círculo
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Círculo</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Figura geométrica plana formada por pontos equidistantes do seu centro.
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Raio = r):</p>
+          <p><span class="font-medium text-emerald-600">Área:</span> A = π · r²</p>
+          <p><span class="font-medium text-emerald-600">Circunferência:</span> C = 2 · π · r</p>
+        </div>
+      </div>
+
+      <!-- 3. Retângulo -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-44 h-28 bg-amber-500 rounded-lg mb-4 flex items-center justify-center text-white font-bold">
+            Retângulo
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Retângulo</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Quadrilátero com lados opostos paralelos e iguais, possuindo 4 ângulos retos.
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Base = b, Altura = h):</p>
+          <p><span class="font-medium text-amber-600">Área:</span> A = b · h</p>
+          <p><span class="font-medium text-amber-600">Perímetro:</span> P = 2b + 2h</p>
+        </div>
+      </div>
+
+      <!-- 4. Elipse -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-44 h-28 bg-rose-500 rounded-[50%] mb-4 flex items-center justify-center text-white font-bold">
+            Elipse
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Elipse</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Figura curva fechada com dois eixos: semi-eixo maior (a) e semi-eixo menor (b).
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Semi-eixos = a, b):</p>
+          <p><span class="font-medium text-rose-600">Área:</span> A = π · a · b</p>
+          <p><span class="font-medium text-rose-600">Perímetro:</span> P ≈ π · [3(a+b) - √((3a+b)(a+3b))]</p>
+        </div>
+      </div>
+
+      <!-- 5. Losango -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-24 h-24 bg-violet-500 rotate-45 mb-4 flex items-center justify-center text-white font-bold my-4">
+            <span class="-rotate-45">Losango</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Losango</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Polígono com 4 lados de igual comprimento e diagonais perpendiculares.
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Diagonais = D, d / Lado = l):</p>
+          <p><span class="font-medium text-violet-600">Área:</span> A = (D · d) / 2</p>
+          <p><span class="font-medium text-violet-600">Perímetro:</span> P = 4 · l</p>
+        </div>
+      </div>
+
+      <!-- 6. Triângulo -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-0 h-0 border-l-[50px] border-l-transparent border-r-[50px] border-r-transparent border-b-[86px] border-b-cyan-500 mb-4"></div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Triângulo</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Polígono de 3 lados e 3 ângulos. Sua soma de ângulos internos é 180°.
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Base = b, Altura = h):</p>
+          <p><span class="font-medium text-cyan-600">Área:</span> A = (b · h) / 2</p>
+          <p><span class="font-medium text-cyan-600">Perímetro:</span> P = a + b + c</p>
+        </div>
+      </div>
+
+      <!-- 7. Trapézio (NOVO) -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-36 h-24 bg-orange-500 mb-4 flex items-center justify-center text-white font-bold [clip-path:polygon(20%_0%,80%_0%,100%_100%,0%_100%)]">
+            Trapézio
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Trapézio</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Quadrilátero com dois lados paralelos chamados de base maior (B) e base menor (b).
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Bases = B, b / Altura = h):</p>
+          <p><span class="font-medium text-orange-600">Área:</span> A = ((B + b) · h) / 2</p>
+          <p><span class="font-medium text-orange-600">Perímetro:</span> P = L1 + L2 + L3 + L4</p>
+        </div>
+      </div>
+
+      <!-- 8. Paralelogramo (NOVO) -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-36 h-24 bg-teal-500 -skew-x-12 mb-4 flex items-center justify-center text-white font-bold">
+            <span class="skew-x-12">Paralelogramo</span>
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Paralelogramo</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Quadrilátero com lados opostos paralelos e iguais em comprimento.
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Base = b, Altura = h):</p>
+          <p><span class="font-medium text-teal-600">Área:</span> A = b · h</p>
+          <p><span class="font-medium text-teal-600">Perímetro:</span> P = 2a + 2b</p>
+        </div>
+      </div>
+
+      <!-- 9. Pentágono (NOVO) -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-28 h-28 bg-fuchsia-500 mb-4 flex items-center justify-center text-white font-bold [clip-path:polygon(50%_0%,100%_38%,82%_100%,18%_100%,0%_38%)]">
+            Pentágono
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Pentágono</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Polígono regular de 5 lados de comprimentos iguais e 5 ângulos internos de 108°.
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Lado = l, Apótema = a):</p>
+          <p><span class="font-medium text-fuchsia-600">Área:</span> A = (5/2) · l · a</p>
+          <p><span class="font-medium text-fuchsia-600">Perímetro:</span> P = 5 · l</p>
+        </div>
+      </div>
+
+      <!-- 10. Hexágono (NOVO) -->
+      <div class="bg-white p-6 rounded-2xl border border-slate-200 shadow-sm hover:shadow-md transition flex flex-col items-center justify-between">
+        <div class="flex flex-col items-center w-full">
+          <div class="w-28 h-28 bg-lime-500 mb-4 flex items-center justify-center text-white font-bold [clip-path:polygon(25%_0%,75%_0%,100%_50%,75%_100%,25%_100%,0%_50%)]">
+            Hexágono
+          </div>
+          <h3 class="text-xl font-bold mb-2 text-slate-900">Hexágono</h3>
+          <p class="text-slate-600 text-xs text-center mb-4">
+            Polígono de 6 lados de comprimentos iguais. Pode ser dividido em 6 triângulos equiláteros.
+          </p>
+        </div>
+        <div class="w-full bg-slate-50 border border-slate-200 rounded-xl p-3 text-xs space-y-1 text-slate-700">
+          <p class="font-semibold text-slate-900 border-b pb-1 mb-1">Fórmulas (Lado = l):</p>
+          <p><span class="font-medium text-lime-600">Área:</span> A = (3√3 / 2) · l²</p>
+          <p><span class="font-medium text-lime-600">Perímetro:</span> P = 6 · l</p>
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="bg-slate-900 text-slate-400 py-6 text-center text-sm border-t border-slate-800">
+    <p>&copy; 2026 - Desenvolvido com Tailwind CSS.</p>
+  </footer>
+
+</body>
+</html>
